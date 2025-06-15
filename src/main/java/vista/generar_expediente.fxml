@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controlador.GenerarExpedienteController" prefWidth="500" prefHeight="400" style="-fx-background-color: #f8f8f8;">
+    <children>
+        <VBox alignment="TOP_LEFT" spacing="15" layoutX="10" layoutY="10" prefWidth="480">
+            <Label text="Generar Expediente" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+            
+            <!-- Mostrar la fecha de visita como texto, no editable -->
+            <Label text="Fecha de Visita:" />
+            <TextField fx:id="txtFechaVisita" editable="false" promptText="Fecha de la visita" />
+
+            <Label text="Síntomas:" />
+            <TextArea fx:id="txtSintomas" wrapText="true" prefRowCount="4" />
+            
+            <Label text="Diagnóstico:" />
+            <TextArea fx:id="txtDiagnostico" wrapText="true" prefRowCount="4" />
+            
+            <Label text="Tratamiento:" />
+            <TextArea fx:id="txtTratamiento" wrapText="true" prefRowCount="4" />
+            
+            <Label text="Observaciones:" />
+            <TextArea fx:id="txtObservaciones" wrapText="true" prefRowCount="4" />
+            
+            <Button text="Guardar" onAction="#handleGuardarExpediente" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" />
+        </VBox>
+    </children>
+</AnchorPane>

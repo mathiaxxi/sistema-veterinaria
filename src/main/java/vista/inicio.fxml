@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="790.0" prefWidth="1132.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1">
+   <children>
+      <Pane prefHeight="782.0" prefWidth="582.0">
+         <children>
+            <Text layoutX="140.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Back" wrappingWidth="304.392578125">
+               <font>
+                  <Font name="System Bold" size="44.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

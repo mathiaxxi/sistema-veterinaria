@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controlador.HistorialMedicoController"
+            prefWidth="1000" prefHeight="600"
+            style="-fx-background-color: #f8f8f8;">
+    <children>
+        <Label text="Detalles del Historial Médico" 
+               style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #333;" 
+               layoutX="10" layoutY="10"/>
+
+        <ScrollPane fx:id="scrollPanel" layoutX="10" layoutY="40" prefWidth="980" prefHeight="530" style="-fx-background-color: white;">
+            <content>
+                <VBox fx:id="vboxHistorial" spacing="15">
+                    <padding>
+                        <Insets top="10" right="10" bottom="10" left="10"/>
+                    </padding>
+                    <HBox spacing="10" style="-fx-background-color: #f1f1f1; -fx-border-color: #ccc; -fx-padding: 10;">
+                        <Label text="Fecha: 2025-06-05" style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+                        <Label text="Motivo: Fiebre" style="-fx-font-size: 14px;"/>
+                        <Button text="Ver Detalles" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" fx:id="btnVerDetalles" />
+                    </HBox>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

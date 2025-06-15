@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controlador.RegistrarMascotaController"
+            prefWidth="800" prefHeight="500" style="-fx-background-color: #f9f9f9;">
+
+    <children>
+        <HBox spacing="30" alignment="CENTER" layoutX="50" layoutY="50">
+            <children>
+
+                <!-- Columna: Mascota -->
+                <VBox spacing="10" alignment="TOP_LEFT">
+                    <Label text="Datos de la Mascota" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+                    <TextField fx:id="campoNombreMascota" promptText="Nombre" />
+                    
+                    <!-- Aquí cambiamos a ComboBox editable -->
+                    <ComboBox fx:id="comboEspecie" editable="true" promptText="Especie" />
+                    <ComboBox fx:id="comboRaza" editable="true" promptText="Raza" />
+                    
+                    <TextField fx:id="campoEdad" promptText="Edad" />
+                    <ComboBox fx:id="comboSexo" promptText="Sexo" />
+                    <TextField fx:id="campoPeso" promptText="Peso (kg)" />
+                </VBox>
+
+                <!-- Columna: Cliente -->
+                <VBox spacing="10" alignment="TOP_LEFT">
+                    <Label text="Datos del Cliente" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+                    <HBox spacing="5">
+                        <TextField fx:id="campoDniCliente" promptText="DNI" />
+                        <Button text="Buscar Cliente" onAction="#handleBuscarCliente" />
+                    </HBox>
+
+                    <TextField fx:id="campoNombreCliente" promptText="Nombre" />
+                    <TextField fx:id="campoApellidoCliente" promptText="Apellido" />
+                    <TextField fx:id="campoCorreoCliente" promptText="Correo electrónico" />
+                    <TextField fx:id="campoTelefonoCliente" promptText="Teléfono" />
+                    <TextField fx:id="campoDireccionCliente" promptText="Dirección" />
+                </VBox>
+            </children>
+        </HBox>
+
+        <!-- Botón Registrar Mascota -->
+        <Button layoutX="350" layoutY="440" text="Registrar Mascota" onAction="#handleRegistrarMascota"
+                style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10px 20px;" />
+
+        <!-- Label para mostrar mensajes -->
+        <Label fx:id="labelMensaje" layoutX="50" layoutY="470" textFill="red" style="-fx-font-size: 13px;" />
+
+    </children>
+</AnchorPane>

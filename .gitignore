@@ -1,0 +1,31 @@
+# NetBeans build folders
+/build/
+/dist/
+
+/nbproject/private/
+/nbbuild/
+/nbdist/
+/.nb-gradle/
+
+# Compiled class files
+*.class
+
+# JARs
+*.jar
+
+# Logs
+*.log
+
+# Backup y bases de datos
+*.bak
+*.mdf
+*.ldf
+
+# IDE específicos (si los usas también)
+.idea/
+/.vscode/
+/*.iml
+
+# Mac
+.DS_Store
+

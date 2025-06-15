@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controlador.PanelRecepcionistaController"
+            prefWidth="800" prefHeight="500" style="-fx-background-color: #f0f0f0;">
+
+    <children>
+
+        <!-- Emoji de fondo decorativo -->
+        <Label text="🐾" layoutX="300" layoutY="50"
+               style="-fx-font-size: 150px; -fx-opacity: 0.1;" />
+
+        <!-- Botones grandes en fila -->
+        <HBox layoutX="150" layoutY="250" spacing="50">
+            <children>
+                <Button fx:id="btnRegistrarMascota" text="Registrar Mascota" onAction="#handle_registrar_mascota"
+                        prefWidth="250" prefHeight="100"
+                        style="-fx-font-size: 18px; -fx-background-color: #4CAF50; -fx-text-fill: white; -fx-background-radius: 12;" />
+                <Button fx:id="btnReservarCita" text="Reservar Cita" onAction="#handle_reservar_cita"
+                        prefWidth="250" prefHeight="100"
+                        style="-fx-font-size: 18px; -fx-background-color: #2196F3; -fx-text-fill: white; -fx-background-radius: 12;" />
+            </children>
+        </HBox>
+
+    </children>
+</AnchorPane>

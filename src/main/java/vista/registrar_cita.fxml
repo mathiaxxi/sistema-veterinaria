@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.collections.FXCollections?>  <!-- Importa FXCollections -->
+<?import javafx.collections.ObservableList?> <!-- Asegúrate de importar ObservableList -->
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controlador.ReservarCitaController" prefWidth="500" prefHeight="600"
+            style="-fx-background-color: #f9f9f9;"> <!-- Fondo claro y limpio -->
+    
+    <children>
+        <!-- Contenedor principal con márgenes y espaciado -->
+        <VBox layoutX="50" layoutY="30" spacing="15" prefWidth="400">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <!-- Encabezado decorativo -->
+            <Label text="🐾 Registrar Nueva Cita" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #333; -fx-padding: 10px;"/>
+
+            <!-- DNI -->
+            <Label text="DNI del dueño" style="-fx-font-size: 14px; -fx-text-fill: #555;" />
+            <TextField fx:id="txt_dni_dueño" onAction="#handleFiltrarMascotas"
+                       style="-fx-padding: 8px; -fx-background-color: #f0f0f0; -fx-border-color: #ccc; -fx-border-radius: 8px; -fx-font-size: 14px;"/>
+
+            <Button text="Buscar Mascotas" onAction="#handleFiltrarMascotas"
+                    style="-fx-background-color: #6c63ff; -fx-text-fill: white; -fx-font-size: 14px; -fx-background-radius: 8px; -fx-padding: 10px;"/>
+
+            <!-- Mascota -->
+            <Label text="Mascota" style="-fx-font-size: 14px; -fx-text-fill: #555;" />
+            <ComboBox fx:id="cmb_mascota" style="-fx-background-color: #f0f0f0; -fx-border-color: #ccc; -fx-border-radius: 8px;"/>
+            
+            <!-- Servicio -->
+            <Label text="Servicio" style="-fx-font-size: 14px; -fx-text-fill: #555;" />
+            <ComboBox fx:id="cmb_servicio" style="-fx-background-color: #f0f0f0; -fx-border-color: #ccc; -fx-border-radius: 8px;"/>
+
+            <!-- Veterinario -->
+            <Label text="Veterinario" style="-fx-font-size: 14px; -fx-text-fill: #555;" />
+            <ComboBox fx:id="cmb_veterinario" style="-fx-background-color: #f0f0f0; -fx-border-color: #ccc; -fx-border-radius: 8px;"/>
+
+            <!-- Turno -->
+            <Label text="Turno" style="-fx-font-size: 14px; -fx-text-fill: #555;" />
+            <ComboBox fx:id="cmb_turno" style="-fx-background-color: #f0f0f0; -fx-border-color: #ccc; -fx-border-radius: 8px;"/>
+
+            <!-- Fecha -->
+            <Label text="Fecha" style="-fx-font-size: 14px; -fx-text-fill: #555;" />
+            <DatePicker fx:id="date_fecha" style="-fx-background-color: #f0f0f0; -fx-border-color: #ccc; -fx-border-radius: 8px;"/>
+
+            <!-- Hora -->
+            <Label text="Hora disponible" style="-fx-font-size: 14px; -fx-text-fill: #555;" />
+            <ComboBox fx:id="cmb_hora" style="-fx-background-color: #f0f0f0; -fx-border-color: #ccc; -fx-border-radius: 8px;"/>
+
+            <!-- Motivo -->
+            <Label text="Motivo" style="-fx-font-size: 14px; -fx-text-fill: #555;" />
+            <TextField fx:id="txt_motivo" style="-fx-padding: 8px; -fx-background-color: #f0f0f0; -fx-border-color: #ccc; -fx-border-radius: 8px; -fx-font-size: 14px;"/>
+
+            <!-- Botón final -->
+            <Button text="Registrar Cita" onAction="#handle_reservar_cita"
+                    style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 16px; -fx-padding: 10px; -fx-background-radius: 10px;"/>
+        </VBox>
+    </children>
+</AnchorPane>
