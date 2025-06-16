@@ -1,4 +1,4 @@
-# 🐾 Sistema de Gestión para Veterinaria - SannaVet
+# 🐾 Sistema para Reserva de Citas para Veterinaria 
 
 Este proyecto consiste en el desarrollo de un sistema informático de gestión para una veterinaria, que permite administrar clientes, mascotas, reservas de servicios y atención médica. La solución está desarrollada en Java bajo la arquitectura MVC, utilizando tecnologías como JavaFX y SQLite, e integrando buenas prácticas como TDD, DAO, y principios SOLID.
 
