@@ -8,10 +8,9 @@ Este proyecto consiste en el desarrollo de un sistema informático de gestión p
 
 - **Lenguaje**: Java 17
 - **Interfaz gráfica**: JavaFX + FXML
-- **Base de datos**: SQLite (JDBC)
-- **Control de versiones**: Git + GitHub
+- **Base de datos**: SQL Server
+- **Control de versiones**:  GitHub
 - **Arquitectura**: MVC + DAO + SOLID
-- **Pruebas**: JUnit 5
 - **Librerías externas**:
   - Google Guava
   - Apache Commons
